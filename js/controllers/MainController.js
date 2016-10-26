@@ -9,6 +9,7 @@ app.controller('MainController', ['$scope', 'forecast', function($scope, forecas
       return err;
     })
     .success(function(data){
+      console.log(data);
       $scope.fiveDay =  data;
     })
 
